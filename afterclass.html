@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Afterclass Array & Map</h1>
+    
+    <p id="product_value"></p>
+    <script>
+        var numbers = [20, 10, 67, 1083];
+        function myFunction(num) {
+            return num * 5;
+        }
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = newarray
+    </script>
+
+
+<p id="result"></p>
+<button onclick="ascending()">Ascending order</button>
+<button onclick="descending()">Descending order</button>
+    <script>
+        var points = [20, 10, 67, 1083];
+            function myFunction(num1) {
+                return num1 * 5; }
+        var newarray = numbers.map(myFunction);
+        
+        document.getElementById("product_value").innerHTML = points;
+        function ascending() {
+        points.sort(function (a, b) { return a - b });
+        document.getElementById("product_value").innerHTML = points;
+        }
+        function descending() {
+        points.sort(function (a, b) { return b - a });
+        document.getElementById("product_value").innerHTML = points;
+        }
+    </script>
+</body>
+</html>
