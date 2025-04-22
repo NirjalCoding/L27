@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map in JavaScript</h1>
+    <p>Multiplication by 5</p>
+    <br>
+    <p id="product_value"></p>
+    <script>
+        var numbers = [20, 10, 67, 1083];
+        function myFunction(num) {
+            return num * 5;
+        }
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = newarray
+    </script>
+</body>
+</html>
